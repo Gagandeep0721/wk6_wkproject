@@ -1,0 +1,47 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset class="name-field">
+            {{ form.name.label }}
+            {{ form.name(class='form-control', placeholder='Name') }}
+        </fieldset>
+        <fieldset class="description-field">
+            {{ form.description.label }}
+            {{ form.description(class='form-control', placeholder='Description') }}
+        </fieldset>
+        <fieldset class="price-field">
+            {{ form.price.label }}
+            {{ form.price(class='form-control', placeholder='Price') }}
+        </fieldset>
+        <fieldset class="release field">
+            {{ form.release.label }}
+            {{ form.release(class='form-control', placeholder='Release') }}
+        </fieldset>
+        <fieldset class="director-field">
+            {{ form.director.label }}
+            {{ form.director(class='form-control', placeholder='Director') }}
+        </fieldset>
+        <fieldset class="sequel-field">
+            {{ form.sequel.label }}
+            {{ form.sequel(class='form-control', placeholder='Sequel') }}
+        </fieldset>
+        <fieldset class="based_on-field">
+            {{ form.based_on.label }}
+            {{ form.based_on(class='form-control', placeholder='Based_on') }}
+        </fieldset>
+        <fieldset class="box_office-field">
+            {{ form.box_office.label }}
+            {{ form.box_office(class='form-control', placeholder='Box_office') }}
+        </fieldset>
+        <fieldset class="series">
+            {{ form.series.label }}
+            {{ form.series(class='form-control', placeholder='series') }}
+        </fieldset>        
+        <fieldset class="joke-field">
+            {{ form.dad_joke.label }}
+            {{ form.dad_joke(class='form-control', placeholder='Dad Joke') }}
+        </fieldset>
+
+        {{ form.submit_button(class='btn btn-primary btn-block mt-2')}}
+    </div>
+</form>
